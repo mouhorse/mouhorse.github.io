@@ -1,0 +1,252 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>高数第七章 | Lucky</title><meta name="author" content="刘同学"><meta name="copyright" content="刘同学"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="微分方程一、微分方程的基本概念 1.凡表示未知函数，未知函数的导数与自变量之间关系的方程叫做微分方程。2.最高阶导数的阶数叫做微分方程的阶。3.通解：微分方程的解中含有任意常数，且常数个数与方程阶数相同。   二、可分离变量微分方程1.可分离变量微分方程：含x，y的项，可以分别写在等号两侧，然后进行反导。   三、齐次方程1.一阶微分方程：    $\frac{dy}{dx}$&#x3D;φ($\">
+<meta property="og:type" content="article">
+<meta property="og:title" content="高数第七章">
+<meta property="og:url" content="https://mouhorse.github.io/2018-01-12/%E9%AB%98%E6%95%B0%E7%AC%AC%E4%B8%83%E7%AB%A0/index.html">
+<meta property="og:site_name" content="Lucky">
+<meta property="og:description" content="微分方程一、微分方程的基本概念 1.凡表示未知函数，未知函数的导数与自变量之间关系的方程叫做微分方程。2.最高阶导数的阶数叫做微分方程的阶。3.通解：微分方程的解中含有任意常数，且常数个数与方程阶数相同。   二、可分离变量微分方程1.可分离变量微分方程：含x，y的项，可以分别写在等号两侧，然后进行反导。   三、齐次方程1.一阶微分方程：    $\frac{dy}{dx}$&#x3D;φ($\">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://freeimghost.net/images/2025/03/03/bj4.png">
+<meta property="article:published_time" content="2018-01-12T03:23:08.000Z">
+<meta property="article:modified_time" content="2025-03-03T03:33:17.334Z">
+<meta property="article:author" content="刘同学">
+<meta property="article:tag" content="高数">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://freeimghost.net/images/2025/03/03/bj4.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "高数第七章",
+  "url": "https://mouhorse.github.io/2018-01-12/%E9%AB%98%E6%95%B0%E7%AC%AC%E4%B8%83%E7%AB%A0/",
+  "image": "https://freeimghost.net/images/2025/03/03/bj4.png",
+  "datePublished": "2018-01-12T03:23:08.000Z",
+  "dateModified": "2025-03-03T03:33:17.334Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "刘同学",
+      "url": "https://github.com/mouhorse"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/th.png"><link rel="canonical" href="https://mouhorse.github.io/2018-01-12/%E9%AB%98%E6%95%B0%E7%AC%AC%E4%B8%83%E7%AB%A0/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><meta name="google-site-verification" content="Bc4tRfMaw7XnqS-KACjzLzmUvYz5yXYVWsfdC3iux4k"/><meta name="baidu-site-verification" content="codeva-E9MpML203E"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: {"defaultEncoding":1,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '高数第七章',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/tou.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">22</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/shuoshuo/"><i class="fa-fw fas fa-music"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://freeimghost.net/images/2025/03/03/bj4.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/img/th.png" alt="Logo"><span class="site-name">Lucky</span></a><a class="nav-page-title" href="/"><span class="site-name">高数第七章</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></div><div class="menus_item"><a class="site-page" href="/Gallery/"><i class="fa-fw fas fa-images"></i><span> 照片</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/shuoshuo/"><i class="fa-fw fas fa-music"></i><span> 说说</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">高数第七章</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2018-01-12T03:23:08.000Z" title="发表于 2018-01-12 11:23:08">2018-01-12</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-03-03T03:33:17.334Z" title="更新于 2025-03-03 11:33:17">2025-03-03</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">总字数:</span><span class="word-count">1.3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>5分钟</span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><h2 id="微分方程"><a href="#微分方程" class="headerlink" title="微分方程"></a>微分方程</h2><p><strong>一、微分方程的基本概念</strong></p>
+<p>1.凡表示未知函数，未知函数的导数与自变量之间关系的方程叫做微分方程。<br>2.最高阶导数的阶数叫做微分方程的阶。<br>3.通解：微分方程的解中含有任意常数，且常数个数与方程阶数相同。</p>
+<hr>
+<hr>
+<p><strong>二、可分离变量微分方程</strong><br>1.可分离变量微分方程：含x，y的项，可以分别写在等号两侧，然后进行反导。</p>
+<hr>
+<hr>
+<p><strong>三、齐次方程</strong><br>1.一阶微分方程：    $\frac{dy}{dx}$&#x3D;φ($\frac{y}{x}$)，或者可化为这种形式的方程称为齐次方程。<br>设u&#x3D;$\frac{y}{x}$，所以说y&#x3D;ux,$\frac{dy}{dx}$&#x3D;u+x($\frac{du}{dx}$)<br>带入原函数可计算<br>最后再将u用x,y替换回来。</p>
+<hr>
+<hr>
+<p><strong>四、一阶线性微分方程</strong><br>1.一阶线性微分方程：$\frac{dy}{dx}$+$P_x$y&#x3D;$Q_x$<br>若$Q_x$&#x3D;0,则方程为齐次的，反之为非齐次的。<br>2.非齐次方程求解：<br>　　　①先求出对应齐次线性方程的解。<br>　　　②然后设常数项C为$u_x$。<br>　　　③然后将u代入y，求出y’。<br>　　　④将y与y’代入题方程中变换得出u。<br>　　　⑤再将u代入齐次方程解中得出非其次方程解。</p>
+<hr>
+<hr>
+<p><strong>五、可降阶的高阶微分方程</strong><br>1.y^(n)^&#x3D;f(x)型：<br>此类型没什么特殊的，一阶一阶求积分即可。</p>
+<p>2.y’’&#x3D;f(x,y’)型（不含y）：<br>设y’&#x3D;P<br>$\therefore$y’’&#x3D;P’<br>方程变成了一阶微分方程，求解，再进行替换即可。</p>
+<p>3.y’’&#x3D;f(y,y’)型（不含x）：<br>设y’&#x3D;P<br>$\therefore$y’’&#x3D;P$\frac{dP}{dy}$<br>代入原方程，积分……<del>即可</del></p>
+<hr>
+<hr>
+<p><strong>六、高阶线性微分方程</strong><br>二阶齐次线性方程：y’’+P(x)y’+Q(x)y&#x3D;0<br>定理一：如果函数$y_1$(x)与$y_2$(x)是该方程的解，那么<br>　　　　y&#x3D;$C_1$$y_1$(x)+$C_2$$y_2$(x)<br>　　　　也是其解。<br>　　　　<br>定理二：如果$y_1$(x)与$y_2$(x)是方程的两个线性无关的特解，那么<br>　　　　y&#x3D;$C_1$$y_1$(x)+$C_2$$y_2$(x)<br>　　　　也是方程通解。<br>　　　　<br>定理三：设y^<em>^是二阶非齐次线性方程y’’+P(x)y’+Q(x)y&#x3D;f(x)的一个特解<br>　　　Y（x）是对应齐次方程的通解，则y&#x3D;Y(x)+y^</em>^(x)<br>　　　也是二阶非齐次线性方程的通解。<br>　　　<br><strong>定理四：设非其次线性方程右端f(x)是两个函数之和，即<br>　　　y’’+P(x)y’+Q(x)y&#x3D;$f_1$(x)+$f_2$(x)<br>　　　而$y_1$^<em>^(x)与$y_2$^</em>^(x)分别是方程<br>　　　y’’+P(x)y’+Q(x)y&#x3D;$f_1$(x)与<br>　　　y’’+P(x)y’+Q(x)y&#x3D;$f_2$(x)的特解<br>　　　则$y_1$^<em>^(x)+$y_2$^</em>^(x)是原方程的特解</strong></p>
+<hr>
+<hr>
+<p><strong>七、常系数齐次线性微分方程</strong><br>1.对应y&#x3D;0,y’&#x3D;r,y’’&#x3D;r^2^</p>
+<table>
+<thead>
+<tr>
+<th>特征方程r^2^+pr+q&#x3D;0的两根r1,r2</th>
+<th>通解</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>不等实根</td>
+<td>y&#x3D;$c_1$ e^(r1x)^+ $c_2$ e^r2x^</td>
+</tr>
+<tr>
+<td>相等实根</td>
+<td>y&#x3D;($c_1$+$c_2$x)e^r1x^</td>
+</tr>
+<tr>
+<td>共轭复根r1,2&#x3D;α±βi</td>
+<td>y&#x3D;e^αx^($c_1$cosβx+$c_2$sinβx)</td>
+</tr>
+<tr>
+<td>2.</td>
+<td></td>
+</tr>
+<tr>
+<td>特征方程的根</td>
+<td>微分方程通解中的对应项</td>
+</tr>
+<tr>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>单实根r</td>
+<td>给出一项：Ce^rx^</td>
+</tr>
+<tr>
+<td>一对单复根r1,2&#x3D;α±βi</td>
+<td>给出两项：e^αx^($C_1$cosβ+$C_2$sinβ)</td>
+</tr>
+<tr>
+<td>k重实根r</td>
+<td>给出k项：e^rx^($C_1$+$C_2$x+…+$C_k$x^k-1^)</td>
+</tr>
+<tr>
+<td>一对k重实根r1,2&#x3D;α±βi</td>
+<td>给出2k项：e^αx^[($C_1$+$C_2$x+…+$C_k$x^k-1^)]cosβx+（$D_1$+$D_2$x+…+$D_k$x^k-1^sinβx）</td>
+</tr>
+</tbody></table>
+<hr>
+<hr>
+<p><strong>第八章：常系数非齐次线性微分方程</strong><br>一般形式：y’’+py’+qy&#x3D;f(x)<br><strong>1</strong>.f(x)&#x3D;e^λx^$P_x$(x)型：</p>
+<p>　（i）如果λ不是特征方程r^2^+pr+q&#x3D;0的根，即λ^2^+pr+q≠0，则设$R_m$(x)&#x3D;$b_0$ x^m^ + $b_1$ x^m-1^ + … + $b_m$$_-$$_1$ x + $b_m$<br>　<br>　　(ii)如果λ是特征方程得单根，即λ^2^+pr+q&#x3D;0,但2λ+p≠0，则设R(x)&#x3D;x$R_m$(x)  [用同样的方法确定$R_m$(x)的系数$b_i$]<br>　　<br>  　　(iii)如果λ是特征方程r^2^+pr+q&#x3D;0的重根，即λ^2^+pr+q≠0，且2λ+p&#x3D;0 ，则设R(x)&#x3D;$x^2$$R_m$(x) [用同样的方法确定$R_m$(x)的系数$b_i$]</p>
+<p> <strong>综上:</strong><br> 　　如果f(x)&#x3D;e^λx^$P_x$(x),那么二阶常系数非齐次线性微分方程具有形如：y*&#x3D;$x^k$$R_m(x)$e^λx^,其中k按是不是特征方程的解取值依次为0,1,2. </p>
+<hr>
+<p> <strong>2.</strong> f(x)&#x3D;e^λx^[$P_l$(x)$\cos\omega$x+$Q_n$(x)$\sin\omega$x]<br>　直接结论：<br>　　设特解为：y*&#x3D;x^K^e^λx^[$R_m^1$(x)$\cos\omega$x+$R_m^2$(x)$\sin\omega$x]<br>　　<strong>·</strong> 其中$R_m^1$(x)，$R_m^2$(x)是m次多项式（$R_m$(x)&#x3D;$b_0$ x^m^ + $b_1$ x^m-1^ + … + $b_m$$_-$$_1$ x + $b_m$），m&#x3D;max { l,n }.【l,n为三角函数前所跟x的多少次方】<br>　　<strong>·</strong> k按λ+ωi（或λ-ωi）不是特征方程的根，是特征方程的根依次取0或1<br>　　<br> &#x3D;&#x3D;求特解步骤：<br> ①写出对应齐次方程。<br> ②变成特征方程。<br> ③计算λ或 { λ+ωi (λ-ωi) ｝是不是特征方程的根，设出特解y*。<br> ④计算出y’,y’’代入题中原方程。<br> ⑤待定系数法求出未知数，得出微分方程特解。<br> <del>⑥求通解的话，再加上对应齐次方程通解即可</del>&#x3D;&#x3D;</p>
+<hr>
+<hr>
+<hr>
+<p>点击查看：<br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43604520/article/details/86083891">第三章</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43604520/article/details/86088726">第四章</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_43604520/article/details/86100636">第五章</a></p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://github.com/mouhorse">刘同学</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://mouhorse.github.io/2018-01-12/%E9%AB%98%E6%95%B0%E7%AC%AC%E4%B8%83%E7%AB%A0/">https://mouhorse.github.io/2018-01-12/%E9%AB%98%E6%95%B0%E7%AC%AC%E4%B8%83%E7%AB%A0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://mouhorse.github.io" target="_blank">Lucky</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E9%AB%98%E6%95%B0/">高数</a></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat.jpg" alt="wechat"/></a><div class="post-qr-code-desc">wechat</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="alipay"/></a><div class="post-qr-code-desc">alipay</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2018-01-11/%E9%AB%98%E6%95%B0%E7%AC%AC%E4%BA%94%E7%AB%A0/" title="高数第五章"><img class="cover" src="https://freeimghost.net/images/2025/03/03/bj2.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">高数第五章</div></div><div class="info-2"><div class="info-item-1"> 由于图片太难看了，所以说更新了一下换成了文字。  定积分一·定积分的性质㈠ 基本性质： (1)当b&#x3D;a时， $\int_{a}^{a} f(x) ,dx$&#x3D;0 (2)当a&gt;b时， $\int_{a}^{b} f(x) ,dx$&#x3D;- $\int_{b}^{a} f(x) ,dx$    ㈡推论： 推论一：如果在区间[a,b]上f(x)≤g(x),那么  $\int_{a}^{b} f(x) ,dx$ ≤  $\int_{a}^{b} g(x) ,dx$  (a&lt;b)　　　　推论二：∣$\int_{a}^{b} f(x) ,dx$ ∣ ≤$\int_{a}^{b} |f(x)| ,dx$    ㈢定积分中值定理：在区间[a,b]上至少存在一点ε使得以区间[a，b]为底边，以曲线y&#x3D;f(x)为曲边的曲边梯形的面积等于同一底边而高为f(ε)的一个矩形的面积。　　　　f($\xi$)&#x3D; $\frac{1}{b-a}$$\int_{a}^{b} f(x)...</div></div></div></a><a class="pagination-related" href="/2018-08-21/3D%E5%9B%BE%E5%83%8F%E9%A2%9C%E8%89%B2/" title="3D图像颜色"><img class="cover" src="https://freeimghost.net/images/2025/03/03/bj7.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">3D图像颜色</div></div><div class="info-2"><div class="info-item-1">viridis   翡翠色   #中文会慢慢给出，也会逐渐整理 只有[ ‘  ‘]内的代码才是颜色。# # cmaps = [(&#39;Perceptually Uniform Sequential&#39;, # #           [&#39;viridis&#39;, &#39;inferno&#39;, &#39;plasma&#39;, &#39;magma&#39;]), # #          (&#39;Sequential&#39;, [&#39;Blues&#39;, &#39;BuGn&#39;, &#39;BuPu&#39;, # #                          &#39;GnBu&#39;, &#39;Greens&#39;, &#39;Greys&#39;, &#39;Oranges&#39;, &#39;OrRd&#39;, # #                          &#39;PuBu&#39;, &#39;PuBuGn&#39;, &#39;PuRd&#39;, &#39;Purples&#39;,...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2019-01-08/%E9%AB%98%E6%95%B0%E7%AC%AC%E4%B8%89%E7%AB%A0/" title="高数第三章"><img class="cover" src="https://freeimghost.net/images/2025/03/03/bj3.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2019-01-08</div><div class="info-item-2">高数第三章</div></div><div class="info-2"><div class="info-item-1">...</div></div></div></a><a class="pagination-related" href="/2018-01-11/%E9%AB%98%E6%95%B0%E7%AC%AC%E4%BA%94%E7%AB%A0/" title="高数第五章"><img class="cover" src="https://freeimghost.net/images/2025/03/03/bj2.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2018-01-11</div><div class="info-item-2">高数第五章</div></div><div class="info-2"><div class="info-item-1"> 由于图片太难看了，所以说更新了一下换成了文字。  定积分一·定积分的性质㈠ 基本性质： (1)当b&#x3D;a时， $\int_{a}^{a} f(x) ,dx$&#x3D;0 (2)当a&gt;b时， $\int_{a}^{b} f(x) ,dx$&#x3D;- $\int_{b}^{a} f(x) ,dx$    ㈡推论： 推论一：如果在区间[a,b]上f(x)≤g(x),那么  $\int_{a}^{b} f(x) ,dx$ ≤  $\int_{a}^{b} g(x) ,dx$  (a&lt;b)　　　　推论二：∣$\int_{a}^{b} f(x) ,dx$ ∣ ≤$\int_{a}^{b} |f(x)| ,dx$    ㈢定积分中值定理：在区间[a,b]上至少存在一点ε使得以区间[a，b]为底边，以曲线y&#x3D;f(x)为曲边的曲边梯形的面积等于同一底边而高为f(ε)的一个矩形的面积。　　　　f($\xi$)&#x3D; $\frac{1}{b-a}$$\int_{a}^{b} f(x)...</div></div></div></a><a class="pagination-related" href="/2018-01-09/%E9%AB%98%E6%95%B0%E7%AC%AC%E5%9B%9B%E7%AB%A0/" title="高数第四章"><img class="cover" src="https://freeimghost.net/images/2025/03/03/bj5.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2018-01-09</div><div class="info-item-2">高数第四章</div></div><div class="info-2"><div class="info-item-1">不定积分 一·不定积分概念与性质 ㈠p188基本积分表：这是根本，不过不用背，会计算就行 ㈡性质：相加可以分开乘个常数，常数可以提出来  例九，例十，例十二，例十五   二·&#x3D;&#x3D;换元积分法&#x3D;&#x3D;㈠第一类换元积分法：　　　　将一个长的，不好化简的式子用u代替，使计算变简单。（积分变量内也要替换）　　　　或者是将积分变量变成其他的（dx变为d？）  感觉这一节例题都不错，都看看吧，最好还是自己做做，做不出来再看解析  ㈡第二类换元积分法：　　　　利用那两个三角公式　　　　 进行适当代换 ㈢还有一种代换叫倒代换，p204页例24.记住这种方法  例二十一，二十二，二十三  ㈣p205，九个公式，最好全记住。虽然说总结的话没有多少可以写的，但是如果做题的话会碰到许多类型，需要多练习。熟练掌握  三·分部积分法㈠...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/tou.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">刘同学</div><div class="author-info-description">欢迎光临我的博客</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">22</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">8</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/mouhorse"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content"><center><b>欢迎来到我的博客！</b><br>可以交换友链<br>联系方式：<a href="mailto:485182274@qq.com" title="发送邮件" class="anno_content">485182274@qq.com</a></center></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%AE%E5%88%86%E6%96%B9%E7%A8%8B"><span class="toc-number">1.</span> <span class="toc-text">微分方程</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2025-02-24/%E8%A7%A3%E5%86%B3-Hexo-%E9%83%A8%E7%BD%B2%E5%88%B0-GitHub-Pages-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E5%A4%B1%E6%95%88/" title="解决 Hexo 部署到 GitHub Pages 自定义域名失效"><img src="https://freeimghost.net/images/2025/03/03/bj6.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="解决 Hexo 部署到 GitHub Pages 自定义域名失效"/></a><div class="content"><a class="title" href="/2025-02-24/%E8%A7%A3%E5%86%B3-Hexo-%E9%83%A8%E7%BD%B2%E5%88%B0-GitHub-Pages-%E8%87%AA%E5%AE%9A%E4%B9%89%E5%9F%9F%E5%90%8D%E5%A4%B1%E6%95%88/" title="解决 Hexo 部署到 GitHub Pages 自定义域名失效">解决 Hexo 部署到 GitHub Pages 自定义域名失效</a><time datetime="2025-02-24T03:00:27.000Z" title="发表于 2025-02-24 11:00:27">2025-02-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025-02-23/Butterfly-%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/" title="Butterfly 个性化配置教程"><img src="https://freeimghost.net/images/2025/03/03/bj5.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Butterfly 个性化配置教程"/></a><div class="content"><a class="title" href="/2025-02-23/Butterfly-%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B/" title="Butterfly 个性化配置教程">Butterfly 个性化配置教程</a><time datetime="2025-02-23T07:35:17.000Z" title="发表于 2025-02-23 15:35:17">2025-02-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2025-02-23/Hexo%E5%AE%89%E8%A3%85%E5%B9%B6%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98/" title="Hexo安装并修改主题"><img src="https://freeimghost.net/images/2025/03/03/bj2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hexo安装并修改主题"/></a><div class="content"><a class="title" href="/2025-02-23/Hexo%E5%AE%89%E8%A3%85%E5%B9%B6%E4%BF%AE%E6%94%B9%E4%B8%BB%E9%A2%98/" title="Hexo安装并修改主题">Hexo安装并修改主题</a><time datetime="2025-02-23T07:18:17.000Z" title="发表于 2025-02-23 15:18:17">2025-02-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024-10-07/MNE%E8%84%91%E7%94%B5%E9%A2%84%E5%A4%84%E7%90%86/" title="MNE脑电预处理"><img src="https://freeimghost.net/images/2025/03/03/bj7.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="MNE脑电预处理"/></a><div class="content"><a class="title" href="/2024-10-07/MNE%E8%84%91%E7%94%B5%E9%A2%84%E5%A4%84%E7%90%86/" title="MNE脑电预处理">MNE脑电预处理</a><time datetime="2024-10-07T08:09:14.000Z" title="发表于 2024-10-07 16:09:14">2024-10-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2023-09-01/Neurofeedback/" title="Neurofeedback"><img src="https://freeimghost.net/images/2025/03/03/bj1.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Neurofeedback"/></a><div class="content"><a class="title" href="/2023-09-01/Neurofeedback/" title="Neurofeedback">Neurofeedback</a><time datetime="2023-09-01T03:28:00.000Z" title="发表于 2023-09-01 11:28:00">2023-09-01</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url(https://freeimghost.net/images/2025/03/03/bj4.png);"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2025 By 刘同学</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.3.3</a></div><div class="footer_custom_text">活出个样子给自己看</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">简</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><div class="js-pjax"></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-show-text.min.js" data-mobile="false" data-text="恭,喜,发,财" data-fontsize="15px" data-random="false" async="async"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="想找什么" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
