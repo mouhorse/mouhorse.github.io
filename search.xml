@@ -1114,4 +1114,25 @@
         <tag>高数</tag>
       </tags>
   </entry>
+  <entry>
+    <title>Hexo本地与云端布局不同处理办法</title>
+    <url>/2025-02-25/Hexo%E6%9C%AC%E5%9C%B0%E4%B8%8E%E4%BA%91%E7%AB%AF%E5%B8%83%E5%B1%80%E4%B8%8D%E5%90%8C%E5%A4%84%E7%90%86%E5%8A%9E%E6%B3%95/</url>
+    <content><![CDATA[<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><p>前两个方法都用过的话，直接使用第三个方法。</p>
+<h2 id="1-清空缓存"><a href="#1-清空缓存" class="headerlink" title="1.清空缓存"></a>1.清空缓存</h2><p>浏览器打开云端网址。 <code>shift + F5</code>，强制清空缓存。</p>
+<h2 id="2-Hexo-clear"><a href="#2-Hexo-clear" class="headerlink" title="2.Hexo clear"></a>2.Hexo clear</h2><p>运行 <code>hexo c &amp;&amp; hexo g</code></p>
+<p>然后重新部署<code>hexo d</code></p>
+<p>接着再使用第一步的<code>shift + F5</code></p>
+<h2 id="3-删除文件"><a href="#3-删除文件" class="headerlink" title="3.删除文件"></a>3.删除文件</h2><p>删除hexo根目录下的这两个文件夹</p>
+<p><a href="/../images/wj1.png" class="gallery-item"><img src="/../images/wj1.png"></a></p>
+<p>然后再用2的方法部署项目。</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>]]></content>
+      <tags>
+        <tag>脱坑笔记</tag>
+      </tags>
+  </entry>
 </search>
